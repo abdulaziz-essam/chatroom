@@ -1,0 +1,18 @@
+<%# app/views/devise/registrations/new.html.erb %>
+
+<h2>Sign Up</h2>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= f.label :email %>
+  <%= f.email_field :email, autofocus: true %>
+
+  <%= f.label :password %>
+  <%= f.password_field :password %>
+
+  <%= f.label :password_confirmation %>
+  <%= f.password_field :password_confirmation %>
+
+  <%= f.submit "Sign Up" %>
+<% end %>
+
+<%= link_to "Already have an account? Log in", new_user_session_path %>

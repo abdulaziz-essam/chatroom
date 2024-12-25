@@ -1,0 +1,168 @@
+/* General Chatroom Container */
+#chatroom_container {
+    min-height: 100vh;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Dark Blue Background for Side Panel and Main Area */
+.bg-dark-blue {
+    background-color: #1e2a47;  /* Dark Blue */
+}
+
+/* All Text in White */
+.text-white {
+    color: #ffffff;  /* White Text */
+}
+
+/* Side Panel Styling */
+#side-panel {
+    background-color: #1e2a47; /* Dark Blue */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Title and Headings in Side Panel */
+#side-panel h4, #side-panel h5 {
+    color: #ffffff;  /* White Text */
+    margin-bottom: 10px;
+}
+
+/* Users List Styling */
+#users, #rooms {
+    background-color: #2b3a64;  /* Slightly Lighter Blue */
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Form Styling (New Room Form) */
+#side-panel .form-group input {
+    border-radius: 5px;
+    color: #ffffff;  /* White Text in Inputs */
+}
+
+/* Main Chat Container */
+#room-container {
+    padding: 20px;
+    border-left: 2px solid #444;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+/* Single Room Header */
+#single_room h4 {
+    color: #ffffff;  /* White Text */
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+/* Message Container */
+#messages {
+    padding: 10px;
+    max-height: calc(100vh - 150px);
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+/* New Message Form */
+#single_room .new-message-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #2b3a64;  /* Lighter Blue */
+    color: #ffffff;  /* White Text in Input */
+}
+
+.new-message-form button {
+    background-color: #007bff;  /* Blue */
+    color: #ffffff;  /* White Text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Responsive Layout for Smaller Screens */
+@media (max-width: 768px) {
+    #side-panel {
+        padding: 10px;
+    }
+
+    #room-container {
+        padding: 10px;
+    }
+}
+/* Overall Container for the Login Form */
+#login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121A3C;  /* Dark Background */
+    padding: 20px;
+  }
+  
+  /* Login Form Styling */
+  .bg-dark-blue {
+    background-color: #1e2a47;  /* Dark Blue */
+    color: #ffffff;  /* White Text */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  h2 {
+    color: #ffffff;  /* White Text */
+    font-size: 2rem;
+  }
+  
+  .form-label {
+    color: #ffffff;  /* White Label Text */
+  }
+  
+  /* Form Input Styling */
+  .form-control {
+    background-color: #2b3a64;  /* Lighter Blue */
+    border: 1px solid #444;
+    color: #ffffff;  /* White Text */
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .form-control:focus {
+    background-color: #2b3a64;  /* Lighter Blue */
+    border-color: #007bff;  /* Highlight on Focus */
+    outline: none;
+  }
+  
+  /* Submit Button Styling */
+  .btn-primary {
+    background-color: #007bff;  /* Blue Button */
+    color: #ffffff;  /* White Text */
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;  /* Darker Blue on Hover */
+  }
+  
+  /* Adjustments for Smaller Screens */
+  @media (max-width: 768px) {
+    #login-container {
+      padding: 15px;
+    }
+  
+    .bg-dark-blue {
+      padding: 20px;
+    }
+  }
+  
