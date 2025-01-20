@@ -64,3 +64,5 @@ end
 
 gem 'devise'
 
+
+gem "rspec-rails", "~> 7.1", :groups => [:development, :test]

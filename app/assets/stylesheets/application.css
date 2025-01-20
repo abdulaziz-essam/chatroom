@@ -1,14 +1,19 @@
 /* General Chatroom Container */
+body {
+    background-color: #0f172a;
+    color: #ffffff;
+}
+
 #chatroom_container {
-    min-height: 100vh;
-    padding: 15px;
+    height: 100vh;
+    margin-top: -1rem;
     display: flex;
     flex-wrap: wrap;
 }
 
-/* Dark Blue Background for Side Panel and Main Area */
+/* Dark Background for Side Panel and Main Area */
 .bg-dark-blue {
-    background-color: #1e2a47;  /* Dark Blue */
+    background-color: #1e293b !important;
 }
 
 /* All Text in White */
@@ -18,10 +23,12 @@
 
 /* Side Panel Styling */
 #side-panel {
-    background-color: #1e2a47; /* Dark Blue */
+    background-color: #1e293b;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    border-right: 1px solid #334155;
 }
 
 /* Title and Headings in Side Panel */
@@ -32,7 +39,7 @@
 
 /* Users List Styling */
 #users, #rooms {
-    background-color: #2b3a64;  /* Slightly Lighter Blue */
+    background-color: #334155;  /* Dark Gray */
     border-radius: 8px;
     padding: 10px;
     margin-bottom: 20px;
@@ -42,12 +49,15 @@
 #side-panel .form-group input {
     border-radius: 5px;
     color: #ffffff;  /* White Text in Inputs */
+    background-color: #334155;  /* Dark Gray */
+    border: 1px solid #475569;
 }
 
 /* Main Chat Container */
 #room-container {
     padding: 20px;
     border-left: 2px solid #444;
+    background-color: #0f172a;
     height: 100vh;
     overflow-y: auto;
 }
@@ -65,6 +75,9 @@
     max-height: calc(100vh - 150px);
     overflow-y: auto;
     margin-bottom: 20px;
+    background-color: #334155;  /* Dark Gray */
+    color: #ffffff;  /* White Text */
+    border: 1px solid #475569;
 }
 
 /* New Message Form */
@@ -73,18 +86,62 @@
     padding: 10px;
     margin-top: 10px;
     border-radius: 5px;
-    border: 1px solid #444;
-    background-color: #2b3a64;  /* Lighter Blue */
+    border: 1px solid #475569;
+    background-color: #334155;  /* Dark Gray */
     color: #ffffff;  /* White Text in Input */
 }
 
 .new-message-form button {
-    background-color: #007bff;  /* Blue */
+    background-color: #475569;  /* Dark Gray */
     color: #ffffff;  /* White Text */
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     margin-top: 10px;
+}
+
+.new-message-form button:hover {
+    background-color: #64748b;  /* Darker Gray */
+}
+
+/* Room Links Styling */
+.room-list {
+    margin-top: 1rem;
+}
+
+.room-list div {
+    padding: 0.75rem 1rem;
+    margin: 0.5rem 0;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: background-color 0.2s ease;
+}
+
+.room-list div:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.room-list a {
+    color: #e2e8f0;
+    text-decoration: none;
+    display: block;
+    font-size: 1.1rem;
+}
+
+.room-list a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* User List Links Styling */
+.user-list a {
+    color: #e2e8f0;
+    text-decoration: none;
+}
+
+.user-list a:hover {
+    color: #ffffff;
+    text-decoration: underline;
 }
 
 /* Responsive Layout for Smaller Screens */
@@ -97,72 +154,72 @@
         padding: 10px;
     }
 }
+
 /* Overall Container for the Login Form */
 #login-container {
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #121A3C;  /* Dark Background */
+    background-color: #0f172a;  /* Dark Background */
     padding: 20px;
-  }
-  
-  /* Login Form Styling */
-  .bg-dark-blue {
-    background-color: #1e2a47;  /* Dark Blue */
+}
+
+/* Login Form Styling */
+.bg-dark-blue {
+    background-color: #1e293b !important;
     color: #ffffff;  /* White Text */
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  h2 {
+}
+
+h2 {
     color: #ffffff;  /* White Text */
     font-size: 2rem;
-  }
-  
-  .form-label {
+}
+
+.form-label {
     color: #ffffff;  /* White Label Text */
-  }
-  
-  /* Form Input Styling */
-  .form-control {
-    background-color: #2b3a64;  /* Lighter Blue */
-    border: 1px solid #444;
+}
+
+/* Form Input Styling */
+.form-control {
+    background-color: #334155;  /* Dark Gray */
+    border: 1px solid #475569;
     color: #ffffff;  /* White Text */
     padding: 10px;
     border-radius: 5px;
-  }
-  
-  .form-control:focus {
-    background-color: #2b3a64;  /* Lighter Blue */
-    border-color: #007bff;  /* Highlight on Focus */
+}
+
+.form-control:focus {
+    background-color: #334155;  /* Dark Gray */
+    border-color: #475569;  /* Highlight on Focus */
     outline: none;
-  }
-  
-  /* Submit Button Styling */
-  .btn-primary {
-    background-color: #007bff;  /* Blue Button */
+}
+
+/* Submit Button Styling */
+.btn-primary {
+    background-color: #475569;  /* Dark Gray */
     color: #ffffff;  /* White Text */
     border: none;
     padding: 10px;
     border-radius: 5px;
     font-size: 1rem;
     margin-top: 15px;
-  }
-  
-  .btn-primary:hover {
-    background-color: #0056b3;  /* Darker Blue on Hover */
-  }
-  
-  /* Adjustments for Smaller Screens */
-  @media (max-width: 768px) {
+}
+
+.btn-primary:hover {
+    background-color: #64748b;  /* Darker Gray */
+}
+
+/* Adjustments for Smaller Screens */
+@media (max-width: 768px) {
     #login-container {
-      padding: 15px;
+        padding: 15px;
     }
-  
+
     .bg-dark-blue {
-      padding: 20px;
+        padding: 20px;
     }
-  }
-  
+}
